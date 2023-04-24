@@ -1,0 +1,18 @@
+﻿string[] infoTown = Console.ReadLine().Split(' ',StringSplitOptions.RemoveEmptyEntries);
+string[] infoBeer = Console.ReadLine().Split(' ',StringSplitOptions.RemoveEmptyEntries);
+string[] infoBank = Console.ReadLine().Split(' ',StringSplitOptions.RemoveEmptyEntries);
+string nameFull = infoTown[0] + " " + infoTown[1];
+string address = infoTown[2];
+string town = infoTown.Length == 5 ? infoTown[3] + " " + infoTown[4] : infoTown[3];
+string nameBeer = infoBeer[0];
+int beerL = int.Parse(infoBeer[1]);
+bool isDrunk = infoBeer[2] == "drunk";
+string nameBank = infoBank[0];
+double money = double.Parse(infoBank[1]);
+string bankName = infoBank[2];
+Threeuple<string,string,string> thupleTown = new(nameFull,address,town);
+Threeuple<string,int,bool> thupleBeer = new(nameBeer,beerL,isDrunk);
+Threeuple<string,double,string> thupleBank = new(nameBank,money,bankName);
+Console.WriteLine($"{thupleTown.Item1} -> {thupleTown.Item2} -> {thupleTown.Item3}");
+Console.WriteLine($"{thupleBeer.Item1} -> {thupleBeer.Item2} -> {thupleBeer.Item3}");
+Console.WriteLine($"{thupleBank.Item1} -> {thupleBank.Item2} -> {thupleBank.Item3}");

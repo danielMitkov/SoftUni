@@ -1,0 +1,15 @@
+﻿string[] infoAddress = Console.ReadLine().Split(' ',StringSplitOptions.RemoveEmptyEntries);
+string[] infoBeer = Console.ReadLine().Split(' ',StringSplitOptions.RemoveEmptyEntries);
+string[] infoNums = Console.ReadLine().Split(' ',StringSplitOptions.RemoveEmptyEntries);
+string nameFull = infoAddress[0] + " " + infoAddress[1];
+string address = infoAddress[2];
+string name = infoBeer[0];
+int beerL = int.Parse(infoBeer[1]);
+int integer = int.Parse(infoNums[0]);
+double doubleNum = double.Parse(infoNums[1]);
+TupleClass<string,string> tupleAddress = new(nameFull,address);
+TupleClass<string,int> tupleBeer = new(name,beerL);
+TupleClass<int,double> tupleNums = new(integer,doubleNum);
+Console.WriteLine($"{tupleAddress.Item1} -> {tupleAddress.Item2}");
+Console.WriteLine($"{tupleBeer.Item1} -> {tupleBeer.Item2}");
+Console.WriteLine($"{tupleNums.Item1} -> {tupleNums.Item2}");
