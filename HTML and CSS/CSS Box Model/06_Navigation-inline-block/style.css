@@ -1,0 +1,32 @@
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+header h1,
+nav,
+li {
+    display: inline-block;
+}
+
+header h1 {
+    margin-right: 75px;
+}
+
+a {
+    color: green;
+    text-decoration: none;
+}
+
+li {
+    margin-right: 30px;
+}
+
+hr {
+    border: none;
+    height: 3px;
+    background: black;
+}
+
+main h1 {
+    font-weight: normal;
+}
