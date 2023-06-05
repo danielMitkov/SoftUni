@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+div {
+    max-width: 65vw;
+}
+
+body>div span {
+    border-width: 1px;
+}
+
+span {
+    display: block;
+}
+
+.workdays,
+.freedays {
+    font-size: 14px;
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    width: 1000px;
+    height: 500px;
+    outline: 5px solid black;
+}
+
+.week {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.week>div {
+    flex: 1;
+    text-align: center;
+}
+
+.work {
+    display: flex;
+    flex-direction: column;
+}
+
+.workweek span {
+    padding-top: 30px;
+}
+
+.work>div {
+    flex: 1;
+    text-align: center;
+    outline: 3px solid black;
+}
+
+.workdays {
+    display: flex;
+}
+
+.workdays span {
+    flex: 1;
+    outline: 3px solid black;
+    padding-top: 30px;
+}
+
+.free {
+    display: flex;
+    flex-direction: column;
+}
+
+.free>* {
+    flex: 1;
+    outline: 3px solid black;
+}
+
+.weekend span {
+    padding-top: 30px;
+}
+
+.freedays {
+    display: flex;
+}
+
+.freedays>* {
+    flex: 1;
+    outline: 3px solid black;
+    padding-top: 30px;
+}
+
+.notes {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.notes span {
+    flex: 1;
+    text-align: center;
+    padding-top: 10px;
+    outline: 3px solid black;
+}

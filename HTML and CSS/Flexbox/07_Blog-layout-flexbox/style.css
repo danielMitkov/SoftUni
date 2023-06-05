@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: rgb(238, 238, 238);
+    margin: 80px;
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    background: rgb(255, 255, 255);
+}
+
+aside a {
+    color: rgb(0, 153, 0);
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+    padding-bottom: 30px;
+}
+
+main h2,
+aside h2 {
+    font-weight: normal;
+    font-family: Georgia, serif;
+}
+
+.box {
+    display: flex;
+}
+
+main {
+    flex-basis: 70%;
+    margin-top: 35px;
+}
+
+aside {
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside div {
+    width: 200px;
+    margin-top: 35px;
+}
+
+aside div ul {
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+aside ul a {
+    text-decoration: none;
+}
+
+aside div ul li {
+    margin-bottom: 5px;
+}
+
+p {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.imgbox1,
+.imgbox2 {
+    background-color: white;
+    border: 4px solid black;
+    box-shadow: 0 0 20px 15px lightgray;
+}
+
+.imgbox1 img,
+.imgbox2 img {
+    display: block;
+    margin: 7px;
+}
+
+.imgbox1 {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.quote {
+    display: flex;
+}
+
+.quote>* {
+    flex: 1;
+}
+
+blockquote {
+    border-left: 4px solid rgba(211, 211, 211, 0.500);
+}
+
+figcaption {
+    text-align: end;
+}
+
+blockquote p {
+    margin-left: 40px;
+}
+
+blockquote * {
+    font-family: Georgia, serif;
+    color: rgb(100, 100, 100);
+    font-style: italic;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+}
+
+.quote p {
+    margin-right: 30px;
+}
+
+.imgbox2 {
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
