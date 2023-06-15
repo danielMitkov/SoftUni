@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 1536px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    background-color: hsl(210.88deg 49.28% 27.06%);
+    padding: 20px 500px;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section{
+    padding: 50px 306px;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+h3, header p,article{
+    margin-bottom: 20px
+}
+footer p{
+    background-color: hsl(210.88deg 49.28% 27.06%);
+    padding: 20px 500px;
+    text-align: center;
+    color: white;
+    margin-top: 205px;
+}
