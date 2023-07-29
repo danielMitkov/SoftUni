@@ -1,10 +1,10 @@
 function focused() {
-  let inputs = document.querySelectorAll(`input`);
+  const inputs = document.querySelectorAll(`input`);
   for (let input of inputs) {
-    input.addEventListener(`focusin`, () => {
+    input.addEventListener(`focus`, () => {
       input.parentElement.classList.add(`focused`);
     });
-    input.addEventListener(`focusout`, () => {
+    input.addEventListener(`blur`, () => {
       input.parentElement.classList.remove(`focused`);
     });
   }
