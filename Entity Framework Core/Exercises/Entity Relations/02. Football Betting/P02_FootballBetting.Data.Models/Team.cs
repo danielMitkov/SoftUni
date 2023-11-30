@@ -28,12 +28,6 @@ public class Team
     public decimal Budget { get; set; }
 
     [Required]
-    public int TownId { get; set; }
-
-    [ForeignKey(nameof(TownId))]
-    public virtual Town Town { get; set; }
-
-    [Required]
     public int PrimaryKitColorId { get; set; }
 
     [ForeignKey(nameof(PrimaryKitColorId))]
@@ -44,6 +38,12 @@ public class Team
 
     [ForeignKey(nameof(SecondaryKitColorId))]
     public virtual Color SecondaryKitColor { get; set; }
+
+    [Required]
+    public int TownId { get; set; }
+
+    [ForeignKey(nameof(TownId))]
+    public virtual Town Town { get; set; }
 
     [InverseProperty(nameof(Game.HomeTeam))]
     public virtual ICollection<Game> HomeGames { get; set; }

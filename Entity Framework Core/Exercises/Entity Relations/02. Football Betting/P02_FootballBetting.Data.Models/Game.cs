@@ -14,6 +14,18 @@ public class Game
     public int GameId { get; set; }
 
     [Required]
+    public int HomeTeamId { get; set; }
+
+    [ForeignKey(nameof(HomeTeamId))]
+    public virtual Team HomeTeam { get; set; }
+
+    [Required]
+    public int AwayTeamId { get; set; }
+
+    [ForeignKey(nameof(AwayTeamId))]
+    public virtual Team AwayTeam { get; set; }
+
+    [Required]
     public int HomeTeamGoals { get; set; }
 
     [Required]
@@ -33,18 +45,6 @@ public class Game
 
     [MaxLength(50)]
     public string Result { get; set; }
-
-    [Required]
-    public int HomeTeamId { get; set; }
-
-    [ForeignKey(nameof(HomeTeamId))]
-    public virtual Team HomeTeam { get; set; }
-
-    [Required]
-    public int AwayTeamId { get; set; }
-
-    [ForeignKey(nameof(AwayTeamId))]
-    public virtual Team AwayTeam { get; set; }
 
     public virtual ICollection<PlayerStatistic> PlayersStatistics { get; set; }
 

@@ -7,6 +7,7 @@ public class Town
     public Town()
     {
         Teams = new HashSet<Team>();
+        Players = new HashSet<Player>();
     }
 
     [Key]
@@ -23,4 +24,6 @@ public class Town
     public virtual Country Country { get; set; }
 
     public virtual ICollection<Team> Teams { get; set; }
+
+    public virtual ICollection<Player> Players { get; set; }
 }

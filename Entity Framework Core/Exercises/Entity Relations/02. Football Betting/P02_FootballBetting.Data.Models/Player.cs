@@ -20,6 +20,21 @@ public class Player
     public int SquadNumber { get; set; }
 
     [Required]
+    public int Assists { get; set; }
+
+    [Required]
+    public int TownId { get; set; }
+
+    [ForeignKey(nameof(TownId))]
+    public virtual Town Town { get; set; }
+
+    [Required]
+    public int PositionId { get; set; }
+
+    [ForeignKey(nameof(PositionId))]
+    public virtual Position Position { get; set; }
+
+    [Required]
     public bool IsInjured { get; set; }
 
     [Required]
@@ -27,12 +42,6 @@ public class Player
 
     [ForeignKey(nameof(TeamId))]
     public virtual Team Team { get; set; }
-
-    [Required]
-    public int PositionId { get; set; }
-
-    [ForeignKey(nameof(PositionId))]
-    public virtual Position Position { get; set; }
 
     public virtual ICollection<PlayerStatistic> PlayersStatistics { get; set; }
 }

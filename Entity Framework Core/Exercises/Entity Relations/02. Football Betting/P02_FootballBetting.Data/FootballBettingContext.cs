@@ -28,7 +28,7 @@ public class FootballBettingContext:DbContext
     {
         if(!optionsBuilder.IsConfigured)
         {
-            optionsBuilder.UseSqlServer(@"Server=DANIEL\MSSQLSERVER01;Database=SoftUni;Integrated Security=true;TrustServerCertificate=True;");
+            optionsBuilder.UseSqlServer(@"Server=DANIEL\MSSQLSERVER01;Database=FootballBetting;Integrated Security=true;TrustServerCertificate=True;");
         }
         base.OnConfiguring(optionsBuilder);
     }
